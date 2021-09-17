@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel reservation form</title>
+</head>
+
+<body>
+    <h1 style="color:green;">Travel reservation form</h1>
+    <h2 style="color:red;">* denotes mandatory</h2>
+    <main>
+        <div>
+            <form method="Get" action="/">
+                <label>Full Name*:</label>
+                <input name="user" type="text"><br>
+
+                <p><label>Email address*:</label>
+                <input name="e" type="email">
+                </p>
+
+                <label for="tour package">Select Tour Package* :</label>
+                <select id="Tour package">
+                    <option value="">--Select Tour Package--</option>
+                    <option value="china">China</option>
+                    <option value="australia">Australia</option>
+                    <option value="england">England</option>
+                    <option value="paris">Paris</option>
+                </select>
+
+                <p><label for="arrival date">Arival date* :</label></p>
+                <input type="date" id="arrival" name="arrival date" value="2021-09-17" min="2021-09-20"
+                    max="2022-12-31">
+
+                <label>Number of persons*:</label>
+                <input type="number" min="1" max="4" step="1" name="numofperson" />
+
+                <p>What would you want to avail?*</p>
+                <fieldset>
+                    <legend>Activities</legend>
+                    <input type="radio" id="b" name="fav_activity" value="boarding">
+                    <label>Boarding</label>
+                    <input type="radio" id="f" name="fav_activity" value="fooding">
+                    <label>Fooding</label>
+                    <input type="radio" id="ss" name="fav_activity" value="sight">
+                    <label>Sight seeing</label><br>
+                </fieldset>
+
+                <p><label>Discount Coupon code:</label></p>
+                <input type="string" name="Coupon code"/>
+
+                <p><legend>Terms and conditions</legend></p>
+                    <input type="radio" id="b" name="toc" value="I agree" checked="true">
+                    <label>I agree</label>
+                    <input type="radio" id="f" name="toc" value="I disagree">
+                    <label>I disagree</label>
+
+                    <p><button type="submit">Complete reservation</button></p>
+
+
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
